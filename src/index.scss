@@ -1,0 +1,34 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import './scss/fontawesome.scss';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html {
+  /**
+  The browsers default pixel size is 16 px so if I set the font-size to 100% 
+  I am telling the browser that I want my rem to be based off 16px
+  but if I set the font-size in the html to 16/100 = 62.5% 
+  my font sizes are then based off of 10px which is an easy number to work with
+  **/
+  font-size: 62.5%;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
